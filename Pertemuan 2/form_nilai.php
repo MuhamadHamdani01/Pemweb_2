@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+require_once'../pertemuan 3/fungsiku.php';
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
