@@ -14,7 +14,7 @@ require_once'../pertemuan 3/fungsiku.php';
  <div class="card">
    <div class="card-body">
      <h5 class="card-title">Form Nilai Mahasiswa</h5>
-<form method="post" action="./nilai_siswa.php">
+<form method="post" action=>
   <div class="form-group row">
     <label for="nama" class="col-4 col-form-label">Nama Lengkap</label> 
     <div class="col-8">
