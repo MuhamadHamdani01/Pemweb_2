@@ -1,0 +1,241 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+h2, h1 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background: linear-gradient(145deg, #00b894, #00cec9); /* Mint Green to Teal Gradient */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+tr:hover {
+    background-color: #d1f2eb; /* Light Mint Green */
+}
+
+/* Form Styles */
+form {
+    background: linear-gradient(145deg, #ffffff, #f4f7fc); /* Soft White to Light Blue Gradient */
+    padding: 35px 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    max-width: 650px;
+    margin: 30px auto;
+    transition: all 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.02);
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    transition: border 0.3s ease, background 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #00b894;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 188, 148, 0.3);
+}
+
+button {
+    background-color: #00cec9;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #00b894;
+    transform: translateY(-2px);
+}
+
+/* Link Styles */
+a {
+    color: #00cec9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00b894;
+    text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card-menu {
+    background: linear-gradient(145deg, #ffffff, #f4f7fc);
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 180px;
+    position: relative;
+}
+
+.card-menu h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card-menu p {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.card-menu:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    transform: translateY(-6px);
+    border-color: #00cec9;
+    color: #00cec9;
+}
+
+.card-menu:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 50px;
+    height: 5px;
+    background-color: #00b894;
+    transform: translateX(-50%);
+}
+
+/* Button for adding new items (like add new kelurahan) */
+.btn {
+    display: inline-block;
+    background-color: #00cec9;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #00b894;
+    transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-menu {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
+
+    .card-menu {
+        height: auto;
+    }
+}
